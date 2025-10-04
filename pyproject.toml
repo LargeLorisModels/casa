@@ -1,0 +1,33 @@
+[project]
+name = "ladis"
+version = "0.1.0"
+description = "Constrained sampling algorithms for language models"
+
+readme = "README.md"
+requires-python = ">=3.12"
+license = {text = "MIT"}
+keywords = ["language-models", "sampling", "constrained-generation", "grammar"]
+classifiers = [
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3.12",
+]
+
+dependencies = [
+	"accelerate>=1.10.1",
+    "torch>=2.0.0",
+    "transformers>=4.30.0",
+    "numpy>=1.24.0",
+    "llguidance>=0.7.0",
+    "rich>=14.1.0",
+    "xgrammar>=0.1.0"
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "pytest>=7.0.0",
+    "ruff>=0.0.260",
+]
