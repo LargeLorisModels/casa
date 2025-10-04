@@ -1,4 +1,4 @@
-# CASA
+![CASA](logo.png)
 
 Constrained aligned sampling algorithms for language models via CARS, MCMC, and rejection sampling variants.
 
