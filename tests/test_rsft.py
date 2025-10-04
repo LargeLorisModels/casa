@@ -1,4 +1,4 @@
-from ladis import LLM, Grammar, RSFT
+from casa import LLM, Grammar, RSFT
 
 llm = LLM.from_pretrained("meta-llama/Llama-3.1-8B-Instruct")
 

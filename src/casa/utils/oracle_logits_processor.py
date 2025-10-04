@@ -4,7 +4,7 @@ import xgrammar
 from typing import Optional
 from transformers.generation.logits_process import LogitsProcessor
 
-from ladis.utils.oracle_trie import Trie
+from casa.utils.oracle_trie import Trie
 
 
 class OracleLogitsProcessor(LogitsProcessor):

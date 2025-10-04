@@ -7,10 +7,10 @@ from transformers.generation.logits_process import (
     InfNanRemoveLogitsProcessor,
 )
 
-from ladis.samplers.base import BaseSampler, SamplingResult
-from ladis.utils.oracle_logits_processor import OracleLogitsProcessor
-from ladis.utils.scoring import get_seq_logprob_from_scores
-from ladis.utils.helpers import print_progress
+from casa.samplers.base import BaseSampler, SamplingResult
+from casa.utils.oracle_logits_processor import OracleLogitsProcessor
+from casa.utils.scoring import get_seq_logprob_from_scores
+from casa.utils.helpers import print_progress
 
 class RS(BaseSampler):
     """Rejection Sampling (RS).

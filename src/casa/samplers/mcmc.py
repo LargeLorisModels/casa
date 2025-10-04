@@ -10,9 +10,9 @@ from transformers.generation.logits_process import (
     InfNanRemoveLogitsProcessor,
 )
 
-from ladis.samplers.base import BaseSampler, SamplingResult
-from ladis.utils.grammar_logits_processor import GrammarLogitsProcessor
-from ladis.utils.scoring import get_seq_logprob_from_scores
+from casa.samplers.base import BaseSampler, SamplingResult
+from casa.utils.grammar_logits_processor import GrammarLogitsProcessor
+from casa.utils.scoring import get_seq_logprob_from_scores
 
 @dataclass
 class MCMCStep:

@@ -1,6 +1,6 @@
-# LADIS
+# CASA
 
-Efficient constrained sampling for language models via CARS, MCMC, and rejection sampling variants.
+Constrained aligned sampling algorithms for language models via CARS, MCMC, and rejection sampling variants.
 
 ## Installation
 
@@ -13,8 +13,8 @@ Efficient constrained sampling for language models via CARS, MCMC, and rejection
 
 ```bash
 # Clone the repository
-git clone https://github.com/LargeLorisModels/ladis.git
-cd ladis
+git clone https://github.com/LargeLorisModels/casa.git
+cd casa
 
 # Create virtual environment (optional but recommended)
 python -m venv .venv
@@ -39,7 +39,7 @@ uv pip install -e .
 ## Quick Start
 
 ```python
-from ladis import LLM, Grammar, CARS
+from casa import LLM, Grammar, CARS
 
 llm = LLM.from_pretrained("meta-llama/Llama-3.1-8B-Instruct")
 
@@ -105,7 +105,7 @@ python tests/test_mcmc.py
 
 ## References
 
-LADIS implements the following algorithms from:
+CASA implements the following algorithms from:
 
 - **RS, ARS, RSFT, CARS**  
   _Constrained Adaptive Rejection Sampling_  

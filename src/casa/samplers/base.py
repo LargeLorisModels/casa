@@ -2,8 +2,8 @@ from abc import ABC, abstractmethod
 from dataclasses import dataclass
 from typing import List, Optional
 import torch
-from ladis.llm import LLM
-from ladis.grammar import Grammar
+from casa.llm import LLM
+from casa.grammar import Grammar
 
 @dataclass
 class SamplingResult:

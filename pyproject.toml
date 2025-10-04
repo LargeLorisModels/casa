@@ -1,5 +1,5 @@
 [project]
-name = "ladis"
+name = "casa"
 version = "0.1.0"
 description = "Constrained sampling algorithms for language models"
 

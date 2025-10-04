@@ -1,7 +1,7 @@
 from typing import Optional
 from transformers import PreTrainedTokenizer
 
-from ladis.utils.llguidance_recognizer import LlguidanceTokenRecognizer
+from casa.utils.llguidance_recognizer import LlguidanceTokenRecognizer
 
 
 class Grammar:
