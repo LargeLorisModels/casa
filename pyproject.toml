@@ -1,13 +1,15 @@
 [project]
 name = "casa"
 version = "0.1.0"
-description = "Constrained sampling algorithms for language models"
+description = "Constrained Aligned Sampling Algorithms"
 
 readme = "README.md"
 requires-python = ">=3.12"
 license = {text = "MIT"}
 keywords = ["language-models", "sampling", "constrained-generation", "grammar"]
 classifiers = [
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: MIT License",
     "Intended Audience :: Science/Research",
     "Programming Language :: Python :: 3.12",
 ]
@@ -21,6 +23,12 @@ dependencies = [
     "rich>=14.1.0",
     "xgrammar>=0.1.0"
 ]
+
+[project.urls]
+Homepage = "https://github.com/LargeLorisModels/casa.git"
+Repository = "https://github.com/LargeLorisModels/casa.git"
+"Bug Tracker" = "https://github.com/LargeLorisModels/casa/issues"
+
 
 [build-system]
 requires = ["hatchling"]
