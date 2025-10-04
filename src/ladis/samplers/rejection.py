@@ -61,7 +61,6 @@ class RS(BaseSampler):
             learn_level=self.learn_level,
             constrain_first=self.constrain_first,
         )
-        max_seen_attempts = 100
         for sample_idx in range(n_samples):
             n_attempts = 0
             success = False
@@ -73,7 +72,7 @@ class RS(BaseSampler):
                     result = self._generate_one(prompt_ids, logits_processor)
                     result.n_attempts = n_attempts
                     results.append(result)
-                    print_progress(sample_idx + 1, n_samples, n_attempts, max_seen_attempts, self.verbose, timeout=False)
+                    print_progress(sample_idx + 1, n_samples, n_attempts, max_attempts, self.verbose, timeout=False)
                     
                     success = True
                     break 
@@ -82,7 +81,7 @@ class RS(BaseSampler):
                     continue  # Try again for this sample
             
             if not success:
-                print_progress(sample_idx + 1, n_samples, n_attempts, n_attempts, self.verbose, timeout=True)
+                print_progress(sample_idx + 1, n_samples, n_attempts, max_attempts, self.verbose, timeout=True)
 
         
         return results
